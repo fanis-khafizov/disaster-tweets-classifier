@@ -1,0 +1,6 @@
+checkpoint_path: artifacts/checkpoints/last.ckpt
+onnx_path: artifacts/onnx/model.onnx
+output_path: artifacts/predictions.csv
+threshold: 0.5
+batch_size: 32
+input_path: data/raw/test.csv

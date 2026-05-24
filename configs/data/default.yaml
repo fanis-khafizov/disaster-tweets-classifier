@@ -1,0 +1,9 @@
+data_dir: ${oc.env:DATA_DIR,data/raw}
+tokenizer_name: microsoft/deberta-v3-base
+max_length: 128
+batch_size: 16
+num_workers: 2
+val_size: 0.15
+use_dvc: true
+use_humaid: true
+humaid_max_samples: 10000

@@ -1,0 +1,10 @@
+defaults:
+  - data: default
+  - model: deberta_v3_base
+  - training: default
+  - logging: mlflow
+  - infer: default
+  - _self_
+
+seed: 42
+project_name: disaster-tweets-classifier

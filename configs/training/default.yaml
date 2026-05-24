@@ -1,0 +1,20 @@
+max_epochs: 3
+accelerator: auto
+devices: auto
+precision: 32-true
+gradient_clip_val: 1.0
+log_every_n_steps: 20
+deterministic: true
+limit_train_batches: null
+limit_val_batches: null
+early_stopping:
+  monitor: val/f1
+  mode: max
+  patience: 2
+checkpoint:
+  dirpath: artifacts/checkpoints
+  filename: deberta-{epoch:02d}-{val/f1:.4f}
+  monitor: val/f1
+  mode: max
+  save_top_k: 1
+  auto_insert_metric_name: false

@@ -1,0 +1,13 @@
+tracking_uri: http://127.0.0.1:8080
+experiment_name: disaster-tweets-classifier
+run_name: null
+log_model: false
+save_plots: true
+plot_metrics:
+  - train/loss_epoch
+  - train/f1
+  - val/loss
+  - val/f1
+  - val/precision
+  - val/recall
+  - val/auroc
