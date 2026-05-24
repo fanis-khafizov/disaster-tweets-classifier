@@ -1,0 +1,7 @@
+[core]
+    remote = data-storage
+    autostage = true
+['remote "data-storage"']
+    url = ../../dvc-storage/data
+['remote "model-storage"']
+    url = ../../dvc-storage/models
